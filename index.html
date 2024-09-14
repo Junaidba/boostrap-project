@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Car show room</title>
+  <link rel="stylesheet" href="/car.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body style="width: 100%;">
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+    crossorigin="anonymous"></script>
+  <script type="importmap">
+{
+"imports": {
+  "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+  "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+}
+}
+</script>
+  <script type="module">
+    import * as bootstrap from 'bootstrap'
+
+    new bootstrap.Popover(document.getElementById('popoverButton'))
+  </script>
+
+
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <i class="fa-solid fa-car fa-bounce"></i> Car Showroom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link home" id="home" aria-current="page" href="/index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link about" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link services" href="/service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact" href="/contactus.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Used Cars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/suv.html" aria-label="SUV Cars"><button type="button"
+                      class="btn btn-outline-primary">SUV CARS</button></a></li>
+                <li><a class="dropdown-item" href="/hatchback_car.html" aria-label="Hatchback Cars"><button
+                      type="button" class="btn btn-outline-success">HATCHBACK CARS</button></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/sedan_car.html" aria-label="Sedan Cars"><button type="button"
+                      class="btn btn-outline-warning">SEDAN CARS</button></a></li>
+                <li><a class="dropdown-item" href="/muv_car.html" aria-label="MUV Cars"><button type="button"
+                      class="btn btn-outline-danger">MUV CARS</button></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade m-auto " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/main img/banner.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/main img/Swift.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/main img/home_samarth_tab.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 w-100 my-3 m-auto">
+    <div class="col">
+      <div class="card h-100">
+        <img src="/form/1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Safty unity</h5>
+          <p class="card-text">Driving schools to insurance of your car -
+            Maruti Suzuki takes care of everything.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="/form/Brezza.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Channels</h5>
+          <p class="card-text">Buy or sell-always get the very best with Maruti Suzuki.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="/form/banner1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CORPORATE</h5>
+          <p class="card-text">Find out what drives the company that drives India.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex flex-column align-items-center ">
+        <img src="/knowmore/Insurance.webp" class="img-thumbnail" alt="...">
+        <button class="btn btn-danger" type="button">know more</button>
+      </div>
+      <div class="col  d-flex flex-column align-items-center">
+        <img src="/knowmore/MDS_Tile.webp" class="img-thumbnail" alt="...">
+        <button class="btn btn-danger" type="button">know more</button>
+      </div>
+      <div class="col col d-flex flex-column align-items-center">
+        <img src="/knowmore/msga_400x350.webp" class="img-thumbnail" alt="...">
+        <button class="btn btn-danger" type="button">know more</button>
+      </div>
+      <div class="col col d-flex flex-column align-items-center">
+        <img src="/knowmore/msga_400x350.webp" class="img-thumbnail" alt="...">
+        <button class="btn btn-danger" type="button">know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="my-3">
+    <h3 style="text-align: center;">DISCOVER OUR <span class="badge bg-secondary"></span></h3>
+  </div>
+  <div class="my-3">
+    <h1 style="text-align: center;">RANGE <span class="badge bg-secondary"></span></h1>
+  </div>
+  <div class="my-2">
+    <h1 style="text-align: center;">ARENA <span class="badge bg-secondary"></span></h1>
+  </div>
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 183px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
+  </head>
+
+
+  <div>
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" loop="true" autoloop="true">
+      <swiper-slide>
+        <img src="/scroll bar/alto.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/baleno.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/brezza.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/celerio.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/ciaz.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/dzire.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/ertiga.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/fronx.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/grand-vitara.webp" />
+      </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </div>
+  <div class="my-1">
+    <h1 style="text-align: center;">NEXA <span class="badge bg-secondary"></span></h1>
+  </div>
+
+
+  <div>
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" loop="true" >
+      <swiper-slide>
+        <img src="/scroll bar/grand-vitara.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/invicto.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/Jimny desktop new.png" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/s-presso.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/swift.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/Xl6.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/wagon-r.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/ertiga.webp" />
+      </swiper-slide>
+      <swiper-slide>
+        <img src="/scroll bar/baleno.webp" />
+      </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </div>
+
+
+
+  
+
+  
+  <footer class="py-4 m-auto ">
+    <div class="row m-0">
+      <div class="col-6 col-md-2 mb-4 m-auto">
+        <h5>Car Info</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-dark">Home</a></li>
+          <li class="nav-item mb-2"><a href="/about.html" class="nav-link p-0 text-dark">About </a></li>
+          <li class="nav-item mb-2"><a href="/service.html" class="nav-link p-0 text-dark">Servive</a></li>
+          <li class="nav-item mb-2"><a href="/contactus.html" class="nav-link p-0 text-dark">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Used Cars</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/suv.html" class="nav-link p-0 text-dark">SUV</a></li>
+          <li class="nav-item mb-2"><a href="/hatchback_car.html" class="nav-link p-0 text-dark">Hatch
+              back</a></li>
+          <li class="nav-item mb-2"><a href="/sedan_car.html" class="nav-link p-0 text-dark">Sedan</a></li>
+          <li class="nav-item mb-2"><a href="/muv_car.html" class="nav-link p-0 text-dark">MUV</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-10 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-center py-2 my-1 border-top m-auto">
+      <p> &nbsp; © 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook"></use>
+            </svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
